@@ -1,10 +1,13 @@
 # Qt Jambi 5+
 
-* [Code repository](https://github.com/tilialabs/qtjambi5)
+* [Code repository](https://github.com/walbit-de/qtjambi5)
+
+## Qt Jambi 5 is alive :)
+![about qtjambi5](/info/about.png)
 
 ## Build Notes
 
-Clone jambi5 source from git. https://github.com/tilialabs/qtjambi5.git
+Clone jambi5 source from git. https://github.com/walbit-de/qtjambi5.git
 
 `~/> git clone https://github.com/tilialabs/qtjambi5.git ~/qtjambi5`
 
@@ -17,10 +20,10 @@ shortcut to use the qt5vars.cmd; set the 'Target' to
 
 ### Build Qt Sources
 
-Unpack, checkout or whatever the Qt source.  Version 5.6.2 is known to work,
+Unpack, checkout or whatever the Qt source.  Version 5.12.8 is known to work,
 later versions may work as well.  Source distributions can be found at
-http://download.qt.io/archive/qt/.  I would recommend the 
-qt-everywhere-opensource-src-x.x.x.zip archives.  Cpp source files need to be
+https://code.qt.io/cgit/qt/qt5.git/.  I would recommend the 
+official Qt GIT repo.  Cpp source files need to be
 modified, binary only distributions will not work.
 
 Modify qt source to re-add jambi support.  There are patch files in the jambi
@@ -28,10 +31,7 @@ directory that need to be applied.  There are unix and windows flavours, I
 believe they only differ in the line endings.
 
 ```
-~/qt-src-5.6.2> git apply --ignore-whitespace ~/qtjambi5/Qt5-patches/win_qtbase_src_corelib_global_qnamespace.h.patch
-~/qt-src-5.6.2> git apply --ignore-whitespace ~/qtjambi5/Qt5-patches/win_qtbase_src_corelib_kernel_qobject.cpp.patch
-~/qt-src-5.6.2> git apply --ignore-whitespace ~/qtjambi5/Qt5-patches/win_qtbase_src_corelib_thread_qthread_unix.cpp.patch
-~/qt-src-5.6.2> git apply --ignore-whitespace ~/qtjambi5/Qt5-patches/win_qtbase_src_corelib_thread_qthread_win.cpp.patch
+~/qt5> git apply --ignore-whitespace ~/qtjambi5/Qt5-patches/qtjambi_qt5_12_8.diff
 ```
 
 Make a build directory outside the qt source directory to avoid polluting the source
