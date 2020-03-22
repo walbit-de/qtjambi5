@@ -9,7 +9,7 @@
 
 Clone jambi5 source from git. https://github.com/walbit-de/qtjambi5.git
 
-`~/> git clone https://github.com/tilialabs/qtjambi5.git ~/qtjambi5`
+`~/> git clone https://github.com/walbit-de/qtjambi5.git ~/qtjambi5`
 
 ### Windows Build Environment
 
