@@ -1,0 +1,24 @@
+### ENVARS LINUX ###
+export QTDIR="/home/xeox/qt5/qtbase"
+export JAVA_HOME="/lib/jvm/default-java"
+export JAVA_HOME_TARGET="$JAVA_HOME"
+export LD_LIBRARY_PATH=/usr/local/Qt-5.12.8/lib
+
+
+### DOKU ###
+- qtjambi_masterinclude.h <- ganz wichtig: widgets ohne qt versionsabfrage!
+- pfade sortieren..
+- ant xmls anpassen
+- order beschreiben
+- typesystem
+
+
+### nur jar bauen ###
+ant library.native.bundle.release // cpp
+ant library.java // java
+ant library // komplett
+
+
+### generator menuell starten ###
+generator/generator --include-paths=/home/xeox/qtjambi5/src/cpp:/usr/include:/usr/include/linux:/usr/include/c++/9:/usr/include/x86_64-linux-gnu/c++/9:/usr/include/x86_64-linux-gnu:/usr/local/Qt-5.12.8/include:/usr/include/x86_64-linux-gnu/qt5:/home/xeox/qt5/qtbase/include/QtCore/5.12.8:/home/xeox/qt5/qtbase/include/QtWidgets/5.12.8:/home/xeox/qt5/qtbase/include/QtGui/5.12.8:/home/xeox/qt5/qt3d/include/Qt3DCore/5.12.8:/home/xeox/qt5/qtdeclarative/include:/home/xeox/qt5/qtbase/include:/home/xeox/qt5/qt3d/include --qt-include-directory=/usr/local/Qt-5.12.8/include:/usr/local/Qt-5.12.8/include/QtCore --input-directory=/home/xeox/qtjambi5/generator --output-directory=/home/xeox/qtjambi5/build/generator/out --preproc-stage1 -D__unix__ -D__linux__ -D__GNUC__=4 -D__x86_64__ /home/xeox/qtjambi5/generator/targets/qtjambi_masterinclude.h /home/xeox/qtjambi5/generator/targets/build_all.xml 2> log.txt > out.txt
+

@@ -1,0 +1,8 @@
+<typesystem package="org.qtjambi.qt.serialport" default-superclass="org.qtjambi.qt.internal.QtJambiObject">
+    <inject-code>
+        org.qtjambi.qt.Utilities.loadQtLibrary("QtCore");
+        org.qtjambi.qt.Utilities.loadQtLibrary("QtSerialPort");
+    </inject-code>
+	<value-type name="QSerialPortInfo">
+    </value-type>
+</typesystem>

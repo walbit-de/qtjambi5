@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<typesystem package="org.qtjambi.qt.dbus" default-superclass="org.qtjambi.qt.internal.QtJambiObject">
+    <inject-code>
+        org.qtjambi.qt.Utilities.loadQtLibrary("QtCore");
+        org.qtjambi.qt.Utilities.loadQtLibrary("QtXml");
+        org.qtjambi.qt.Utilities.loadQtLibrary("QtDBus");
+    </inject-code>
+</typesystem>
