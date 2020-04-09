@@ -34,14 +34,6 @@ believe they only differ in the line endings.
 ~/qt5> git apply --ignore-whitespace ~/qtjambi5/Qt5-patches/qtjambi_qt5_12_8.diff
 ```
 
-Make a build directory outside the qt source directory to avoid polluting the source
-if something goes wrong.
-
-```
-~/> mkdir build-qt-5.6.2
-~/> cd build-qt-5.6.2
-```
-
 Configure the build settings.  Skip Qt3D, I couldn't compile it because of a missing
 dependency on zlib.  I'm sure there are workarounds, but its just not needed.
 Many other modules could likely be skipped as well, but peeling them
@@ -49,7 +41,7 @@ off and rebuilding jambi takes an eternity.  It's not worth the effort.
 Some exploration into other opengl options, like Angle might be worth while.
 
 ```
-~/build-qt-5.6.2> ~/qt-src-5.6.2/configure -opensource -release -nomake tests -nomake examples -opengl dynamic -plugin-manifests -skip qt3d
+~/qt5> configure -opensource -release -nomake tests -nomake examples -opengl dynamic -plugin-manifests -skip qt3d
 ```
     
 Build and install.  Note, the install step is super important.  There is a lot
@@ -57,8 +49,9 @@ of header monkeying during install and jambi requires them to be setup properly
 to build.
 
 ```
-~/build-qt-5.6.2> nmake
-~/build-qt-5.6.2> nmake install
+~/qt5> set QMAKE_CXXFLAGS=/MP
+~/qt5> nmake
+~/qt5> nmake install
 ```
 
 ### Build Jambi
