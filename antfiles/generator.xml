@@ -15,7 +15,7 @@
                 header="${generatorDir}/targets/qtjambi_masterinclude.h"
                 qtincludedirectory="${generator.qtincludepath}"
                 qtlibdirectory="${tools.qt.libdir}"
-                includepaths="${generator.includepaths}"
+                includepaths="${basedir}/generator/targets;${basedir}/src/cpp;$(generator.qtincludepath);$(generator.qtsrcpath)/qtbase/include/QtCore;$(generator.qtsrcpath)/qtbase/include/QtANGLE;$(generator.qtsrcpath)/qtbase/include/QtCore/5.12.8;$(generator.qtsrcpath)/qtbase/include/QtWidgets/5.12.8;$(generator.qtsrcpath)/qtbase/include/QtGui/5.12.8;$(generator.qtsrcpath)/qt3d/include/Qt3DCore/5.12.8;$(generator.qtsrcpath)/qtdeclarative/include;$(generator.qtsrcpath)/qtbase/include;$(generator.qtsrcpath)/qt3d/include"
                 kdephonon="${qtjambi.phonon.kdephonon-path}"
                 options="${qtjambi.generator.jumptable}"/>
     </target>
