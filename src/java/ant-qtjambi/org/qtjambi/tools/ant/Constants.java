@@ -260,6 +260,7 @@ public abstract class Constants {
     public static final String PLUGINS_PLATFORMS_QEGLFS = "qtjambi.plugins.platforms.qeglfs";
     public static final String PLUGINS_PLATFORMS_QCOCOA = "qtjambi.plugins.platforms.qcocoa";
     public static final String PLUGINS_PLATFORMS_QXCB = "qtjambi.plugins.platforms.qxcb";
+    public static final String PLUGINS_STYLES_QWINDOWSVISTASTYLE = "qtjambi.plugins.styles.qwindowsvistastyle";
     public static final String PLUGINS_PLAYLISTFORMATS_QTMULTIMEDIA_M3U = "qtjambi.plugins.playlistformats.qtmultimedia_m3u";
     public static final String PLUGINS_POSITION_QTPOSITION_POSITIONPOLL = "qtjambi.plugins.position.qtposition_positionpoll";
     public static final String PLUGINS_PRINTSUPPORT_WINDOWSPRINTERSUPPORT = "qtjambi.plugins.printsupport.windowsprintersupport";

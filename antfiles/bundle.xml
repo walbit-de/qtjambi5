@@ -17,7 +17,7 @@
           config="${qtjambi.configuration} ${qtjambi.config.jumptable}"
           qtconfig="${qtjambi.qtconfig}"
           debugTools="${qtjambi.debug-tools}"
-          qmakebinary="/usr/local/Qt-5.12.8/bin/qmake"/>
+          qmakebinary="${qtjambi.qt.qmake.abspath}"/>
   </target>
 
   <!--
@@ -188,6 +188,7 @@
       <library name="qwayland-egl"                   load="never" type="plugin" rootPath="${qtjambi.qt.pluginsdir}" subdir="platforms" destSubdir="plugins" if="${qtjambi.plugins.platforms.qwayland-egl}"/>
       <library name="qwayland-generic"               load="never" type="plugin" rootPath="${qtjambi.qt.pluginsdir}" subdir="platforms" destSubdir="plugins" if="${qtjambi.plugins.platforms.qwayland-generic}"/>
       <library name="qxcb"                           load="never" type="plugin" rootPath="${qtjambi.qt.pluginsdir}" subdir="platforms" destSubdir="plugins" if="${qtjambi.plugins.platforms.qxcb}"/>
+      <library name="qwindowsvistastyle"             load="never" type="plugin" rootPath="${qtjambi.qt.pluginsdir}" subdir="styles" destSubdir="plugins" if="${qtjambi.plugins.styles.qwindowsvistastyle}"/>
       <library name="qtmultimedia_m3u"               load="never" type="plugin" rootPath="${qtjambi.qt.pluginsdir}" subdir="playlistformats" destSubdir="plugins" if="${qtjambi.plugins.playlistformats.qtmultimedia_m3u}"/>
       <library name="qtposition_positionpoll"        load="never" type="plugin" rootPath="${qtjambi.qt.pluginsdir}" subdir="position" destSubdir="plugins" if="${qtjambi.plugins.position.qtposition_positionpoll}"/>
       <library name="windowsprintersupport"          load="never" type="plugin" rootPath="${qtjambi.qt.pluginsdir}" subdir="printsupport" destSubdir="plugins" if="${qtjambi.plugins.printsupport.windowsprintersupport}"/>
@@ -556,6 +557,7 @@
       <library name="qwayland-egl"                   load="never" type="plugin" rootPath="${qtjambi.qt.pluginsdir}" subdir="platforms" destSubdir="plugins" if="${qtjambi.plugins.platforms.qwayland-egl.debug}"/>
       <library name="qwayland-generic"               load="never" type="plugin" rootPath="${qtjambi.qt.pluginsdir}" subdir="platforms" destSubdir="plugins" if="${qtjambi.plugins.platforms.qwayland-generic.debug}"/>
       <library name="qxcb"                           load="never" type="plugin" rootPath="${qtjambi.qt.pluginsdir}" subdir="platforms" destSubdir="plugins" if="${qtjambi.plugins.platforms.qxcb.debug}"/>
+      <library name="qwindowsvistastyle"             load="never" type="plugin" rootPath="${qtjambi.qt.pluginsdir}" subdir="styles" destSubdir="plugins" if="${qtjambi.plugins.styles.qwindowsvistastyle.debug}"/>
       <library name="qtmultimedia_m3u"               load="never" type="plugin" rootPath="${qtjambi.qt.pluginsdir}" subdir="playlistformats" destSubdir="plugins" if="${qtjambi.plugins.playlistformats.qtmultimedia_m3u.debug}"/>
       <library name="qtposition_positionpoll"        load="never" type="plugin" rootPath="${qtjambi.qt.pluginsdir}" subdir="position" destSubdir="plugins" if="${qtjambi.plugins.position.qtposition_positionpoll.debug}"/>
       <library name="windowsprintersupport"          load="never" type="plugin" rootPath="${qtjambi.qt.pluginsdir}" subdir="printsupport" destSubdir="plugins" if="${qtjambi.plugins.printsupport.windowsprintersupport.debug}"/>

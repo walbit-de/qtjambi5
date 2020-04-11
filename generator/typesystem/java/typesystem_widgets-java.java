@@ -426,8 +426,10 @@ class QApplication___ extends QApplication {
             List<String> paths = Utilities.unpackPlugins();
             if (paths != null) {
                 Collections.reverse(paths);  // Qt prepends but our list is in highest priority first order
-                for (String p : paths)
-                    addLibraryPath(p);
+				for (String p : paths) {
+					addLibraryPath(p);
+					QCoreApplication.addLibraryPath(p);
+				}
             }
             org.qtjambi.qt.internal.QtJambiInternal.setupDefaultPluginPath();
             m_instance = new QApplication(args);
@@ -443,8 +445,10 @@ class QApplication___ extends QApplication {
             List<String> paths = Utilities.unpackPlugins();
             if (paths != null) {
                 Collections.reverse(paths);  // Qt prepends but our list is in highest priority first order
-                for (String p : paths)
-                    addLibraryPath(p);
+				for (String p : paths) {
+					addLibraryPath(p);
+					QCoreApplication.addLibraryPath(p);
+				}
             }
             org.qtjambi.qt.internal.QtJambiInternal.setupDefaultPluginPath();
             m_instance = new QApplication(applicationName, args);

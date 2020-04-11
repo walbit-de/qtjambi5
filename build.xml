@@ -50,15 +50,13 @@
 
     <property name="qtjambi.builddir"              location="build/qmake-qtjambi"/>
 
-    <property name="generator.builddir"            location="generator"/>
+    <property name="generator.builddir"            location="build/qmake-generator"/>
     <property name="generator.outputdir"           location="build/generator/out"/>
     <property name="generator.xmlmerge.srcdir"     location="generator/typesystem/xml"/>
     <property name="generator.xmlmerge.outputdir"  location="build/generator"/>
 
     <property name="juic.builddir"                 location="build/qmake-juic"/>
     <property name="juic.outputdir"                location="build/juic-out"/>
-
-    <property name="tools.qt.qmake.abspath"                location="/usr/local/Qt-5.12.8/bin/qmake"/>
 
 
     <!--
@@ -74,7 +72,6 @@
         <property name="build.log.dir" location="${basedir}/buildlogs"/>
         <mkdir dir="${build.log.dir}"/>
         <property name="build.log.filename" value="build_${timestamp}.log"/>
-        <property name="build.log.loglevel" value="info" />
         <record name="${build.log.dir}/${build.log.filename}" loglevel="${build.log.loglevel}" append="false"/>
         <echo message="Build logged to ${build.log.filename}"/>
     </target>
