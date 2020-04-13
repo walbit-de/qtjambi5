@@ -42,7 +42,7 @@
 
     <!-- These properties used to be at the top of build.properties
          but no one is expected to change them.
-         -->
+    -->
     <property name="java.srcdir"                   location="src/java"/>
     <property name="java.outdir"                   location="build/java"/>
     <property name="java.outsrcdir"                location="build/java-src"/>

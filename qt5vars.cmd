@@ -4,7 +4,7 @@ set JAVA_HOME_TARGET=C:\opt\JDEV\JDK8_202_x64
 
 REM SET _ROOT=C:\Qt\Qt-5.12.8
 SET _ROOT=C:\Users\xeox\Downloads\qt5
-SET QTDIR=C:\Users\xeox\Downloads\qt5\qtbase
+SET QTDIR=C:\Qt\Qt-5.12.8
 
 REM Set up \Microsoft Visual Studio 2013, where <arch> is \c amd64, \c x86, etc.
 CALL "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsall.bat" x64

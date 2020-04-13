@@ -573,7 +573,7 @@ public class PlatformJarTask extends Task {
                     Util.copy(srcTarget, destTarget);
                 } catch(IOException ex) {
                     ex.printStackTrace();
-                    throw new BuildException("Failed to copy file '" + toplevelName + "'");
+                    //throw new BuildException("Failed to copy file '" + toplevelName + "'");
                 }
             }
             rv = true;

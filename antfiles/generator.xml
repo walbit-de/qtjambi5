@@ -6,16 +6,16 @@
     <target name="generator.run" depends="init.build, generator.xmlmerge"
         description="Runs the Qt Jambi generator on the Qt headers">
         <mkdir dir="${generator.outputdir}"/>
-        <generator dir="${jambi.directory}"
+		<generator dir="${jambi.directory}"
                 debugTools="${qtjambi.debug-tools}"
                 inputDirectory="${generatorDir}"
                 outputDirectory="${generator.outputdir}"
                 generatorDirectory="${generator.builddir}"
                 typesystem="${generatorDir}/targets/build_all.xml"
                 header="${generatorDir}/targets/qtjambi_masterinclude.h"
-                qtincludedirectory="${generator.qtincludepath}"
+                qtincludedirectory="${qtjambi.qt.includedir}"
                 qtlibdirectory="${tools.qt.libdir}"
-                includepaths="${basedir}/generator/targets;${basedir}/src/cpp;$(generator.qtincludepath);$(generator.qtsrcpath)/qtbase/include/QtCore;$(generator.qtsrcpath)/qtbase/include/QtANGLE;$(generator.qtsrcpath)/qtbase/include/QtCore/5.12.8;$(generator.qtsrcpath)/qtbase/include/QtWidgets/5.12.8;$(generator.qtsrcpath)/qtbase/include/QtGui/5.12.8;$(generator.qtsrcpath)/qt3d/include/Qt3DCore/5.12.8;$(generator.qtsrcpath)/qtdeclarative/include;$(generator.qtsrcpath)/qtbase/include;$(generator.qtsrcpath)/qt3d/include"
+                includepaths="${basedir}/generator/targets;${basedir}/src/cpp;${qtjambi.qt.includedir};${generator.qtsrcpath}/qtbase/include/QtCore;${generator.qtsrcpath}/qtbase/include/QtANGLE;${generator.qtsrcpath}/qtbase/include/QtCore/${qtjambi.version};${generator.qtsrcpath}/qtbase/include/QtWidgets/${qtjambi.version};${generator.qtsrcpath}/qtbase/include/QtGui/${qtjambi.version};${generator.qtsrcpath}/qt3d/include/Qt3DCore/${qtjambi.version};${generator.qtsrcpath}/qtdeclarative/include;${generator.qtsrcpath}/qtbase/include;${generator.qtsrcpath}/qt3d/include"
                 kdephonon="${qtjambi.phonon.kdephonon-path}"
                 options="${qtjambi.generator.jumptable}"/>
     </target>

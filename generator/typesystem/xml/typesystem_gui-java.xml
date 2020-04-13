@@ -329,6 +329,7 @@
 			<include file-name="qtjambi/qtjambi_cache.h" location="global"/>
             <include file-name="java.util.Collections" location="java"/>
             <include file-name="java.util.List" location="java"/>
+            <include file-name="org.qtjambi.qt.core.QCoreApplication" location="java"/>
         </extra-includes>
         <modify-function signature="QGuiApplication(int &amp;, char  **, int)">
             <inject-code class="shell">

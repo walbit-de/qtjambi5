@@ -41,7 +41,7 @@ off and rebuilding jambi takes an eternity.  It's not worth the effort.
 Some exploration into other opengl options, like Angle might be worth while.
 
 ```
-~/qt5> configure -opensource -release -nomake tests -nomake examples -opengl dynamic -plugin-manifests -skip qt3d
+~/qt5> configure -confirm-license -opensource -release -nomake tests -nomake examples -plugin-manifests
 ```
     
 Build and install.  Note, the install step is super important.  There is a lot
