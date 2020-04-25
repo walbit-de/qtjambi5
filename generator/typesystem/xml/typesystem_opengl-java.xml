@@ -705,14 +705,14 @@ typedef qint32 qgl_GLsizeiptr;
         <modify-function signature="setUniformValueArray(int, const QVector2D *, int)" rename="setUniformValueArray_QVector2D" access="private"/>
         <modify-function signature="setUniformValueArray(int, const QVector3D *, int)" rename="setUniformValueArray_QVector3D" access="private"/>
         <modify-function signature="setUniformValueArray(int, const QVector4D *, int)" rename="setUniformValueArray_QVector4D" access="private"/>
-        <modify-function signature="setUniformValueArray(int, const QMatrix2x2 *, int)" rename="setUniformValueArray_QMatrix2x2" access="private"/>
-        <modify-function signature="setUniformValueArray(int, const QMatrix3x2 *, int)" rename="setUniformValueArray_QMatrix3x2" access="private"/>
-        <modify-function signature="setUniformValueArray(int, const QMatrix4x2 *, int)" rename="setUniformValueArray_QMatrix4x2" access="private"/>
-        <modify-function signature="setUniformValueArray(int, const QMatrix2x3 *, int)" rename="setUniformValueArray_QMatrix2x3" access="private"/>
-        <modify-function signature="setUniformValueArray(int, const QMatrix3x3 *, int)" rename="setUniformValueArray_QMatrix3x3" access="private"/>
-        <modify-function signature="setUniformValueArray(int, const QMatrix4x3 *, int)" rename="setUniformValueArray_QMatrix4x3" access="private"/>
-        <modify-function signature="setUniformValueArray(int, const QMatrix2x4 *, int)" rename="setUniformValueArray_QMatrix2x4" access="private"/>
-        <modify-function signature="setUniformValueArray(int, const QMatrix3x4 *, int)" rename="setUniformValueArray_QMatrix3x4" access="private"/>
+        <!--modify-function signature="setUniformValueArray(int, const QMatrix2x2 *, int)" rename="setUniformValueArray_QMatrix2x2" access="private" remove="all"/>
+        <modify-function signature="setUniformValueArray(int, const QMatrix3x2 *, int)" rename="setUniformValueArray_QMatrix3x2" access="private" remove="all"/>
+        <modify-function signature="setUniformValueArray(int, const QMatrix4x2 *, int)" rename="setUniformValueArray_QMatrix4x2" access="private" remove="all"/>
+        <modify-function signature="setUniformValueArray(int, const QMatrix2x3 *, int)" rename="setUniformValueArray_QMatrix2x3" access="private" remove="all"/>
+        <modify-function signature="setUniformValueArray(int, const QMatrix3x3 *, int)" rename="setUniformValueArray_QMatrix3x3" access="private" remove="all"/>
+        <modify-function signature="setUniformValueArray(int, const QMatrix4x3 *, int)" rename="setUniformValueArray_QMatrix4x3" access="private" remove="all"/>
+        <modify-function signature="setUniformValueArray(int, const QMatrix2x4 *, int)" rename="setUniformValueArray_QMatrix2x4" access="private" remove="all"/>
+        <modify-function signature="setUniformValueArray(int, const QMatrix3x4 *, int)" rename="setUniformValueArray_QMatrix3x4" access="private" remove="all"/-->
 		<modify-function signature="setUniformValueArray(int, const QMatrix4x4 *, int)" rename="setUniformValueArray_QMatrix4x4" access="private"/>
 		<modify-function signature="setUniformValueArray(const char*, const GLuint *, int)" rename="setUniformValueArray_uint" access="private">
 			<modify-argument index="1">

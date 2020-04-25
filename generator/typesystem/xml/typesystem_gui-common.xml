@@ -965,23 +965,68 @@
     </value-type>
     <object-type name="QTreeModel"/>
 
-    <value-type name="QtJambiMatrix4x3" java-name="QMatrix4x3"/>
+    <!--value-type name="QtJambiMatrix4x3" java-name="QMatrix4x3"/>
     <value-type name="QtJambiMatrix4x2" java-name="QMatrix4x2"/>
     <value-type name="QtJambiMatrix3x4" java-name="QMatrix3x4"/>
     <value-type name="QtJambiMatrix3x3" java-name="QMatrix3x3"/>
     <value-type name="QtJambiMatrix3x2" java-name="QMatrix3x2"/>
     <value-type name="QtJambiMatrix2x4" java-name="QMatrix2x4"/>
     <value-type name="QtJambiMatrix2x3" java-name="QMatrix2x3"/>
-    <value-type name="QtJambiMatrix2x2" java-name="QMatrix2x2"/>
+    <value-type name="QtJambiMatrix2x2" java-name="QMatrix2x2"/-->
+	
+	<rejection class="QMatrix4x3"/>
+	<rejection class="QMatrix4x2"/>
+	<rejection class="QMatrix3x4"/>
+	<rejection class="QMatrix3x3"/>
+	<rejection class="QMatrix3x2"/>
+	<rejection class="QMatrix2x4"/>
+	<rejection class="QMatrix2x3"/>
+	<rejection class="QMatrix2x2"/>
 
-    <value-type name="QMatrix4x3" generate="no"/>
+    <!--value-type name="QMatrix4x3" generate="no"/>
     <value-type name="QMatrix4x2" generate="no"/>
     <value-type name="QMatrix3x4" generate="no"/>
     <value-type name="QMatrix3x3" generate="no"/>
     <value-type name="QMatrix3x2" generate="no"/>
     <value-type name="QMatrix2x4" generate="no"/>
     <value-type name="QMatrix2x3" generate="no"/>
-    <value-type name="QMatrix2x2" generate="no"/>
+    <value-type name="QMatrix2x2" generate="no"/-->
+    <!--value-type name="QMatrix4x2">
+        <modify-function signature="data()" remove="all" />
+		<modify-function signature="constData()const" remove="all" />
+        <modify-function signature="operator()(int, int)const" remove="all" />
+    </value-type>
+    <value-type name="QMatrix3x4">
+        <modify-function signature="data()" remove="all" />
+		<modify-function signature="constData()const" remove="all" />
+        <modify-function signature="operator()(int, int)const" remove="all" />
+    </value-type>
+    <value-type name="QMatrix3x3">
+        <modify-function signature="data()" remove="all" />
+		<modify-function signature="constData()const" remove="all" />
+        <modify-function signature="operator()(int, int)const" remove="all" />
+    </value-type>
+    <value-type name="QMatrix3x2">
+        <modify-function signature="data()" remove="all" />
+		<modify-function signature="constData()const" remove="all" />
+        <modify-function signature="operator()(int, int)const" remove="all" />
+    </value-type>
+    <value-type name="QMatrix2x4">
+        <modify-function signature="data()" remove="all" />
+		<modify-function signature="constData()const" remove="all" />
+        <modify-function signature="operator()(int, int)const" remove="all" />
+    </value-type>
+    <value-type name="QMatrix2x3">
+        <modify-function signature="data()" remove="all" />
+		<modify-function signature="constData()const" remove="all" />
+        <modify-function signature="operator()(int, int)const" remove="all" />
+    </value-type>
+    <value-type name="QMatrix2x2">
+        <modify-function signature="data()" remove="all" />
+		<modify-function signature="constData()const" remove="all" />
+        <modify-function signature="operator()(int, int)const" remove="all" />
+    </value-type-->
+
     <value-type name="QMatrix4x4">
         <!--modify-function signature="normalMatrix()const" remove="all" /-->
         <modify-function signature="data()" remove="all" />

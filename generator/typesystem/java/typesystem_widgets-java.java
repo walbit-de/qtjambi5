@@ -688,16 +688,16 @@ class QGraphicsScene___ extends QGraphicsScene {
         /**
          * Equivalent to addEllipse(x, y, w, h, null, null)
          */
-        public final QGraphicsEllipseItem addEllipse(double x, double y, double w, double h) {
+        /*public final QGraphicsEllipseItem addEllipse(double x, double y, double w, double h) {
             return addEllipse(x, y, w, h, null);
-        }
+        }*/
 
         /**
          * Equivalent to addEllipse(x, y, w, h, pen, null)
          */
-        public final QGraphicsEllipseItem addEllipse(double x, double y, double w, double h, QPen pen) {
+        /*public final QGraphicsEllipseItem addEllipse(double x, double y, double w, double h, QPen pen) {
             return addEllipse(x, y, w, h, pen, null);
-        }
+        }*/
 
         /**
          * Creates and adds an ellipse item to the scene, and returns the item
@@ -719,7 +719,7 @@ class QGraphicsScene___ extends QGraphicsScene {
          * @param brush The brush for the resulting QGraphicsEllipseItem.
          * @return The resulting item.
          */
-        public final QGraphicsEllipseItem addEllipse(double x, double y, double w, double h, QPen pen, QBrush brush) {
+        /*public final QGraphicsEllipseItem addEllipse(double x, double y, double w, double h, QPen pen, QBrush brush) {
             QGraphicsEllipseItem item = new QGraphicsEllipseItem(x, y, w, h);
             item.setPen(pen);
             item.setBrush(brush);
@@ -727,7 +727,7 @@ class QGraphicsScene___ extends QGraphicsScene {
             addItem(item);
 
             return item;
-        }
+        }*/
 
         /**
          * Equivalent to addLine(line, null)
@@ -759,9 +759,9 @@ class QGraphicsScene___ extends QGraphicsScene {
         /**
          * Equivalent to addLine(x1, y1, x2, y2, null)
          */
-        public final QGraphicsLineItem addLine(double x1, double y1, double x2, double y2) {
+        /*public final QGraphicsLineItem addLine(double x1, double y1, double x2, double y2) {
             return addLine(x1, y1, x2, y2, null);
-        }
+        }*/
 
         /**
          * Creates and adds a line item to the scene, and returns the item
@@ -782,14 +782,14 @@ class QGraphicsScene___ extends QGraphicsScene {
          * @param pen The pen with which to draw the line.
          * @return The resulting item.
          */
-        public final QGraphicsLineItem addLine(double x1, double y1, double x2, double y2, QPen pen) {
+        /*public final QGraphicsLineItem addLine(double x1, double y1, double x2, double y2, QPen pen) {
             QGraphicsLineItem item = new QGraphicsLineItem(x1, y1, x2, y2);
             item.setPen(pen);
 
             addItem(item);
 
             return item;
-        }
+        }*/
 
 
         /**
@@ -898,16 +898,16 @@ class QGraphicsScene___ extends QGraphicsScene {
         /**
          * Equivalent to addRect(rect, null, null)
          */
-        public final QGraphicsRectItem addRect(org.qtjambi.qt.core.QRectF rect) {
+        /*public final QGraphicsRectItem addRect(org.qtjambi.qt.core.QRectF rect) {
             return addRect(rect, null);
-        }
+        }*/
 
         /**
          * Equivalent to addRect(rect, pen, null)
          */
-        public final QGraphicsRectItem addRect(org.qtjambi.qt.core.QRectF rect, QPen pen) {
+        /*public final QGraphicsRectItem addRect(org.qtjambi.qt.core.QRectF rect, QPen pen) {
             return addRect(rect, pen, null);
-        }
+        }*/
 
         /**
          * Creates and adds a rectangle item to the scene, and returns the item
@@ -928,9 +928,9 @@ class QGraphicsScene___ extends QGraphicsScene {
          * @param brush The brush with which to draw the rectangle.
          * @return The resulting item.
          */
-        public final QGraphicsRectItem addRect(org.qtjambi.qt.core.QRectF rect, QPen pen, QBrush brush) {
+        /*public final QGraphicsRectItem addRect(org.qtjambi.qt.core.QRectF rect, QPen pen, QBrush brush) {
             return addRect(rect.x(), rect.y(), rect.width(), rect.height(), pen, brush);
-        }
+        }*/
 
         /**
          * Equivalent to addRect(x, y, w, h, null, null)

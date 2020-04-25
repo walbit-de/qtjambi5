@@ -8,7 +8,7 @@ include ($$QTJAMBI_CPP/org_qtjambi_qt_qml/org_qtjambi_qt_qml.pri)
 INCLUDEPATH += $$PWD
 DEPENDPATH += $$PWD
 
-HEADERS += org_qtjambi_qt_qml_QQmlListProperty.h qmlregistry.h qqmllistproperty.h qtjambishell_QQmlListProperty.h
+HEADERS += qmlregistry.h qqmllistproperty.h qtjambishell_QQmlListProperty.h
 SOURCES += qmlregistry.cpp qqmllistproperty.cpp qtjambishell_QQmlListProperty.cpp
 
 QT += core gui qml

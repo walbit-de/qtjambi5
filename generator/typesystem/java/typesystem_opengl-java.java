@@ -157,7 +157,7 @@ class QGLShaderProgram___ extends QGLColormap {
 			this.setUniformValueArray_int(name, org.qtjambi.qt.internal.QtJambiInternal.intArrayToNativePointer(values), tupleSize);
 		}
 		
-		@QtBlockedSlot
+		/*@QtBlockedSlot
 		public final void setUniformValueArray(int location, org.qtjambi.qt.gui.QMatrix2x2[] values, int tupleSize)    {
 			this.setUniformValueArray_QMatrix2x2(location, arrayToNativePointer(values), tupleSize);
 		}
@@ -235,7 +235,7 @@ class QGLShaderProgram___ extends QGLColormap {
 		@QtBlockedSlot
 		public final void setUniformValueArray(String name, org.qtjambi.qt.gui.QMatrix4x3[] values, int tupleSize)    {
 			this.setUniformValueArray_QMatrix4x3(name, arrayToNativePointer(values), tupleSize);
-		}
+		}*/
 		
 		@QtBlockedSlot
 		public final void setUniformValueArray(int location, org.qtjambi.qt.gui.QMatrix4x4[] values, int tupleSize)    {

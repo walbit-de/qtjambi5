@@ -629,13 +629,13 @@ class QTransform___ extends QTransform {
          * @throws IllegalArgumentException
          *             If this transformation is not invertible.
          */
-        public final QTransform inverted() {
+        /*public final QTransform inverted() {
             QNativePointer ok = new QNativePointer(QNativePointer.Type.Boolean);
             QTransform returned = inverted(ok);
             if (!ok.booleanValue())
                 throw new IllegalArgumentException("Transformation is not invertible");
             return returned;
-        }
+        }*/
 
         /**
          * Creates a transformation mapping one arbitrary quad into another.

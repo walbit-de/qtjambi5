@@ -6,7 +6,7 @@ SUBDIRS =   qtjambi \
             qtjambi_core \
             qtjambi_gui \
             qtjambi_widgets \
-            qtjambi_network \
+            #qtjambi_network \
             qtjambi_qml \
             qtjambi_quick \
             qtjambi_quick_widgets
@@ -30,17 +30,17 @@ contains(QT_CONFIG, help):				SUBDIRS += qtjambi_help
 contains(QT_CONFIG, webkit):            SUBDIRS += qtjambi_webkit
 contains(QT_CONFIG, webkitwidgets):            SUBDIRS += qtjambi_webkit_widgets
 contains(QT_CONFIG, designer):          SUBDIRS += qtjambi_designer
-contains(QT_CONFIG, designer):          SUBDIRS += designer-integration
+#contains(QT_CONFIG, designer):          SUBDIRS += designer-integration
 contains(QT_CONFIG, serialport):            SUBDIRS += qtjambi_serialport
 contains(QT_CONFIG, winextras):            SUBDIRS += qtjambi_winextras
 contains(QT_CONFIG, macextras):            SUBDIRS += qtjambi_macextras
 contains(QT_CONFIG, x11extras):            SUBDIRS += qtjambi_x11extras
 
-contains(QT_CONFIG, 3dcore):            SUBDIRS += qtjambi_3dcore
-contains(QT_CONFIG, 3drenderer):            SUBDIRS += qtjambi_3drenderer
-contains(QT_CONFIG, 3dcore):            SUBDIRS += qtjambi_3dinput
-contains(QT_CONFIG, 3dquick):            SUBDIRS += qtjambi_3dquick
-contains(QT_CONFIG, 3dquickrenderer):            SUBDIRS += qtjambi_3dquickrenderer
+#contains(QT_CONFIG, 3dcore):            SUBDIRS += qtjambi_3dcore
+#contains(QT_CONFIG, 3drenderer):            SUBDIRS += qtjambi_3drenderer
+#contains(QT_CONFIG, 3dcore):            SUBDIRS += qtjambi_3dinput
+#contains(QT_CONFIG, 3dquick):            SUBDIRS += qtjambi_3dquick
+#contains(QT_CONFIG, 3dquickrenderer):            SUBDIRS += qtjambi_3dquickrenderer
 
 contains(QT_CONFIG, release):contains(QT_CONFIG, debug) {
     # Qt was configued with both debug and release libs
